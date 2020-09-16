@@ -1,12 +1,12 @@
 'use strict';
 
-/* The connect() function uses SockJS and stomp client to connect to the /ws endpoint that we configured in Spring Boot.
+/* A função connect() usa SockJS e o stomp client para conectar ao endpoint /ws que configuramos no Spring Boot.
  *
- * Upon successful connection, the client subscribes to /topic/public destination and tells the user’s name to the server by sending a message to the /app/chat.addUser destination.
+ * Assim que a conexão for sucedida, o client se inscreve a um destino /topic/public e diz o nome do usuário para o servidor através de uma mensagem para o destino /app/chat.addUser.
  *
- * The stompClient.subscribe() function takes a callback method which is called whenever a message arrives on the subscribed topic.
+ * A função stompClient.subscribe() recebe um método de callback sempre que uma mensagem chega no tópico inscrito.
  *
- * Rest of the code is used to display and format the messages on the screen.
+ * O resto do código é usado para mostrar e formatar a mensagem na tela.
  *
  */
 
